@@ -123,6 +123,9 @@ body {
 
 .tasks-list {
   display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
   background: #DBDBDB;
   border-radius: 5px;
   width: 386px;
@@ -133,22 +136,13 @@ body {
   /* overflow: auto; */
 }
 
-.tasks-list ol {
-  margin: 18px;
-  width: 100%;
-  overflow: auto;
-}
 
-.tasks-list ol li {
-  width: 75%;
-  margin: 0 36px;
-  padding: 10px 18px 6px 6px;
+.tasks-list li.done {
+  text-decoration: line-through;
+  color: #999999;
 }
 
 .divider-task {
   border: 1px solid #b0b0b0b7;
 }
 
-.tasks-list ol::-webkit-scrollbar {
-  visibility: hidden;
-}
